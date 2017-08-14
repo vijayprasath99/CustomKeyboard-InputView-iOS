@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Keyboard" customModule="CustomInputView_test1" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-mr-fPd">
@@ -28,7 +28,7 @@
                     <rect key="frame" x="16" y="149" width="103" height="102"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="1"/>
+                    <state key="normal" title="C"/>
                     <connections>
                         <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="3od-k8-Gb5"/>
                     </connections>
@@ -37,7 +37,7 @@
                     <rect key="frame" x="136" y="149" width="103" height="102"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="2"/>
+                    <state key="normal" title="D"/>
                     <connections>
                         <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="7er-hH-dzA"/>
                     </connections>
@@ -64,7 +64,7 @@
                     <rect key="frame" x="261" y="149" width="103" height="102"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="3"/>
+                    <state key="normal" title="E"/>
                     <connections>
                         <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="JVk-Xh-6T6"/>
                     </connections>
@@ -73,7 +73,7 @@
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-126" y="54"/>
+            <point key="canvasLocation" x="-126.5" y="54"/>
         </view>
     </objects>
 </document>

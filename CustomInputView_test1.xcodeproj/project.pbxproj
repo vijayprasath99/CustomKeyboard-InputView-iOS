@@ -12,10 +12,10 @@
 		65FFF9211F3E036D008EA6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FFF91F1F3E036D008EA6BA /* Main.storyboard */; };
 		65FFF9231F3E036D008EA6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FFF9221F3E036D008EA6BA /* Assets.xcassets */; };
 		65FFF9261F3E036D008EA6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FFF9241F3E036D008EA6BA /* LaunchScreen.storyboard */; };
-		65FFF92E1F3E03C9008EA6BA /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FFF92D1F3E03C9008EA6BA /* Keyboard.xib */; };
 		65FFF9301F3E03E4008EA6BA /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFF92F1F3E03E4008EA6BA /* Keyboard.swift */; };
 		65FFF9341F3E1371008EA6BA /* Letters.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FFF9331F3E1371008EA6BA /* Letters.xib */; };
 		65FFF9361F3E14E7008EA6BA /* Numbers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FFF9351F3E14E7008EA6BA /* Numbers.xib */; };
+		65FFF9581F410518008EA6BA /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FFF9571F410518008EA6BA /* Keyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		65FFF9221F3E036D008EA6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65FFF9251F3E036D008EA6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65FFF9271F3E036D008EA6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65FFF92D1F3E03C9008EA6BA /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
 		65FFF92F1F3E03E4008EA6BA /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		65FFF9331F3E1371008EA6BA /* Letters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Letters.xib; path = ../Letters.xib; sourceTree = "<group>"; };
 		65FFF9351F3E14E7008EA6BA /* Numbers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Numbers.xib; sourceTree = "<group>"; };
+		65FFF9571F410518008EA6BA /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Keyboard.xib; path = ../Keyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				65FFF91B1F3E036D008EA6BA /* AppDelegate.swift */,
 				65FFF91D1F3E036D008EA6BA /* ViewController.swift */,
 				65FFF91F1F3E036D008EA6BA /* Main.storyboard */,
-				65FFF92D1F3E03C9008EA6BA /* Keyboard.xib */,
+				65FFF9571F410518008EA6BA /* Keyboard.xib */,
 				65FFF9331F3E1371008EA6BA /* Letters.xib */,
 				65FFF9351F3E14E7008EA6BA /* Numbers.xib */,
 				65FFF92F1F3E03E4008EA6BA /* Keyboard.swift */,
@@ -135,11 +135,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FFF9581F410518008EA6BA /* Keyboard.xib in Resources */,
 				65FFF9341F3E1371008EA6BA /* Letters.xib in Resources */,
 				65FFF9261F3E036D008EA6BA /* LaunchScreen.storyboard in Resources */,
 				65FFF9361F3E14E7008EA6BA /* Numbers.xib in Resources */,
 				65FFF9231F3E036D008EA6BA /* Assets.xcassets in Resources */,
-				65FFF92E1F3E03C9008EA6BA /* Keyboard.xib in Resources */,
 				65FFF9211F3E036D008EA6BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +315,7 @@
 				65FFF92C1F3E036D008EA6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
