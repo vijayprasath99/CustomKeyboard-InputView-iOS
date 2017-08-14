@@ -46,9 +46,9 @@
                     <rect key="frame" x="261" y="149" width="103" height="102"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="6"/>
+                    <state key="normal" title="Superscript"/>
                     <connections>
-                        <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="8ji-Hj-bML"/>
+                        <action selector="superScriptToggleWithSender:" destination="-1" eventType="touchUpInside" id="Yk3-Kx-DkH"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-hu-RD8">

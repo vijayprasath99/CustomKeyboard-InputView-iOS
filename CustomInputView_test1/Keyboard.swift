@@ -13,6 +13,7 @@ import UIKit
 protocol KeyboardDelegate: class {
     func keyWasTapped(character: String)
     func doneEditing(_ value : Bool)
+    func keyWasTapped(character : String, withOption : Bool)
 }
 
 class Keyboard: UIView {
@@ -75,6 +76,7 @@ class Keyboard: UIView {
             let newX : CGFloat = currentViewToAdd.frame.width * CGFloat(i)
             contentOffSetArray.append(newX)
             contentSize += currentViewToAdd.frame.width
+//            contentOffSetArray.append(contentSize)
             
             currentViewToAdd.frame = CGRect(x: newX, y: 0, width: currentViewToAdd.frame.width, height: currentViewToAdd.frame.height)
         }
@@ -82,17 +84,23 @@ class Keyboard: UIView {
     }
     
     // MARK:- To Toggle Superscript Mode
-    func superScriptToggle(){
+    @IBAction func superScriptToggle(sender: UIButton) {
         superScriptModeIsEnabled = !superScriptModeIsEnabled
+        print(superScriptModeIsEnabled)
     }
-    
     
     
     // MARK:- Button actions from .xib file
     @IBAction func keyTapped(sender: UIButton) {
         // When a button is tapped, send that information to the
         // delegate (ie, the view controller)
-        self.delegate?.keyWasTapped(character: sender.titleLabel!.text!) // could alternatively send a tag value
+        let text = sender.titleLabel!.text!
+        if superScriptModeIsEnabled {
+            self.delegate?.keyWasTapped(character: text, withOption: true)
+        } else {
+            self.delegate?.keyWasTapped(character: text) // could alternatively send a tag value
+        }
+        
     }
     
     // MARK:- Button to initiate Transition between pages

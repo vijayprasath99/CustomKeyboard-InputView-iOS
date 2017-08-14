@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController, KeyboardDelegate {
     
@@ -25,10 +26,23 @@ class ViewController: UIViewController, KeyboardDelegate {
     
     // required method for keyboard delegate protocol
     func keyWasTapped(character: String) {
-        textField.insertText(character)
+        if character == "Backspace" {
+            if let text = textField.text, text.characters.count > 0{
+                let index = text.index(text.startIndex, offsetBy: text.characters.count-1)
+                let shorterText = text.substring(to:index)
+                textField.text = shorterText
+            }
+        } else {
+            textField.insertText(character)
+        }
     }
     
     func doneEditing(_ value: Bool) {
         view.endEditing(value)
+    }
+    
+    func keyWasTapped(character : String, withOption : Bool) {
+        let str = SuperScript.shared.getSuperScriptUnicode(char: character)
+        textField.insertText(str)
     }
 }

@@ -42,6 +42,14 @@
                         <action selector="bringDownKeyboardWithSender:" destination="-1" eventType="touchUpInside" id="ZHL-eo-UlY"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyL-O3-6sG">
+                    <rect key="frame" x="50" y="351" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Backspace"/>
+                    <connections>
+                        <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="9qA-7k-qgT"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Nnr-40-QlN" secondAttribute="bottom" constant="20" id="61v-sb-XYv"/>

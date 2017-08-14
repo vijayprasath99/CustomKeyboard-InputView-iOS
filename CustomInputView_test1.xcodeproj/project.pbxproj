@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651441A51F4204690035192F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651441A41F4204690035192F /* Utility.swift */; };
+		651441A71F4228890035192F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651441A61F4228890035192F /* Constants.swift */; };
 		65FFF91C1F3E036D008EA6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFF91B1F3E036D008EA6BA /* AppDelegate.swift */; };
 		65FFF91E1F3E036D008EA6BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFF91D1F3E036D008EA6BA /* ViewController.swift */; };
 		65FFF9211F3E036D008EA6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FFF91F1F3E036D008EA6BA /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		651441A41F4204690035192F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		651441A61F4228890035192F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		65FFF9181F3E036D008EA6BA /* CustomInputView_test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomInputView_test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FFF91B1F3E036D008EA6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65FFF91D1F3E036D008EA6BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,9 +73,11 @@
 				65FFF9331F3E1371008EA6BA /* Letters.xib */,
 				65FFF9351F3E14E7008EA6BA /* Numbers.xib */,
 				65FFF92F1F3E03E4008EA6BA /* Keyboard.swift */,
+				651441A41F4204690035192F /* Utility.swift */,
 				65FFF9221F3E036D008EA6BA /* Assets.xcassets */,
 				65FFF9241F3E036D008EA6BA /* LaunchScreen.storyboard */,
 				65FFF9271F3E036D008EA6BA /* Info.plist */,
+				651441A61F4228890035192F /* Constants.swift */,
 			);
 			path = CustomInputView_test1;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651441A71F4228890035192F /* Constants.swift in Sources */,
+				651441A51F4204690035192F /* Utility.swift in Sources */,
 				65FFF91E1F3E036D008EA6BA /* ViewController.swift in Sources */,
 				65FFF9301F3E03E4008EA6BA /* Keyboard.swift in Sources */,
 				65FFF91C1F3E036D008EA6BA /* AppDelegate.swift in Sources */,
