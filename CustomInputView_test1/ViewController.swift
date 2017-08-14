@@ -27,4 +27,8 @@ class ViewController: UIViewController, KeyboardDelegate {
     func keyWasTapped(character: String) {
         textField.insertText(character)
     }
+    
+    func doneEditing(_ value: Bool) {
+        view.endEditing(value)
+    }
 }

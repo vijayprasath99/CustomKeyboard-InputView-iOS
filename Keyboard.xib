@@ -34,6 +34,14 @@
                         <action selector="transitionInitiatedWithSender:" destination="-1" eventType="touchUpInside" id="9GH-5s-UeA"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9s-b7-BCh">
+                    <rect key="frame" x="248" y="351" width="127" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Dismiss Keyboard"/>
+                    <connections>
+                        <action selector="bringDownKeyboardWithSender:" destination="-1" eventType="touchUpInside" id="ZHL-eo-UlY"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Nnr-40-QlN" secondAttribute="bottom" constant="20" id="61v-sb-XYv"/>

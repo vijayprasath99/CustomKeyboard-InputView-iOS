@@ -12,6 +12,7 @@ import UIKit
 // and thus must contain the keyWasTapped method
 protocol KeyboardDelegate: class {
     func keyWasTapped(character: String)
+    func doneEditing(_ value : Bool)
 }
 
 class Keyboard: UIView {
@@ -23,6 +24,9 @@ class Keyboard: UIView {
     var viewsToAdd = [UIView]()
     var contentOffSetArray = [CGFloat]()
     var contentSize : CGFloat = 0.0
+    
+    
+    var superScriptModeIsEnabled : Bool = false
     
     // This variable will be set as the view controller so that
     // the keyboard can send messages to the view controller.
@@ -77,6 +81,11 @@ class Keyboard: UIView {
         scrollView.contentSize = CGSize(width: contentSize, height: scrollView.frame.height)
     }
     
+    // MARK:- To Toggle Superscript Mode
+    func superScriptToggle(){
+        superScriptModeIsEnabled = !superScriptModeIsEnabled
+    }
+    
     
     
     // MARK:- Button actions from .xib file
@@ -91,5 +100,10 @@ class Keyboard: UIView {
         var contentOffSet = scrollView.contentOffset
         contentOffSet.x = contentOffSetArray[sender.tag]
         scrollView.setContentOffset(contentOffSet, animated: true)
+    }
+    
+    // MARK:- Button to end Editing
+    @IBAction func bringDownKeyboard(sender: UIButton) {
+        self.delegate?.doneEditing(true)
     }
 }
