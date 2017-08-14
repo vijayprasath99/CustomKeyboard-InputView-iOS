@@ -17,7 +17,7 @@ protocol KeyboardDelegate: class {
 
 class Keyboard: UIView {
     
-     let initialSubview = "Keyboard"
+    let initialSubview = "Keyboard"
     
     var keyboardPlaceHolderView : UIView!
     var scrollView : UIScrollView!
